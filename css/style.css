@@ -4,9 +4,80 @@
     padding: 0;
 }
 
-body {
-    height: 100vh;
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+body {
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+}
+
 /********************
     HEADER
 ********************/
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1.5rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .4);
+    z-index: 10;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header__playgame {
+    height: 2rem;
+    padding: .5rem 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: all .15s linear;
+}
+
+.header__playgame:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+/********************
+    FIELD
+********************/
+.field__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field__grid {
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    display: flex;
+    border: 1px solid black;
+    font-size: 12px;
+}
+
+.cell.active {
+    background-color: lightskyblue;
+}
+
