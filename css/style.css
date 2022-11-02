@@ -43,19 +43,31 @@ header {
 }
 
 select {
-    
+    border: none;
+    height: 20px;
+    margin-right: 1rem;
+    font-size: 16px;
+    outline: none;
 }
 
 .header__playgame {
-    height: 2rem;
-    padding: .5rem 1rem;
-    border: 1px solid;
-    border-radius: 5px;
-    transition: all .15s linear;
+    background-color: #FFFFFF;
+    padding: .5rem 1.5rem;
+    border: 0;
+    border-radius: .5rem;
+    color: #111827;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    transition: all .2s linear;
 }
 
 .header__playgame:hover {
+    background-color: #f9fafb;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.header__playgame:active {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
 }
 
 /********************
