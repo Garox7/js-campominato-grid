@@ -1,8 +1,8 @@
-let difficultyLevel = document.getElementById('select-difficulty').value;
 const playButton = document.querySelector('.header__playgame');
-const gridElement = document.querySelector('.field__grid');
 
 playButton.addEventListener('click', function(){
+    let difficultyLevel = document.getElementById('select-difficulty').value;
+    const gridElement = document.querySelector('.field__grid');
     gridElement.replaceChildren();
     console.log('mi hai cliccato');
     
